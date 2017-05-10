@@ -1,0 +1,124 @@
+@import "chartist-settings.scss";
+@import "chartist.scss";
+
+/*
+ * Breakpoints
+ */
+
+@mixin view-s {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+body { 
+  background: #F2F2F2;
+  color: #333;
+  padding: 0;
+  margin: 0;
+}
+
+
+.container {
+  padding-top: 40px;
+
+  @include view-s {
+    padding-top: 10px;
+  }
+}
+.block {
+  //background: rgba(0,0,0,);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+
+  h1 {
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: HSLA(188, 44%, 29%, 1);
+    font-weight: normal;
+    @include view-s {
+      font-size: 18px;
+    }    
+  }
+
+  &.center-text {
+    text-align: center;
+  }
+
+  @include view-s {
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0 0 5px;
+  }
+
+}
+
+.data {
+  .number {
+    font-size: 36px;
+    @include view-s {
+      font-size: 36px;
+  }
+  }
+  .label {
+    font-size: 24px;
+    color: #333;
+  }
+}
+
+.sidebar {
+  color: #fff;
+  position: fixed;
+  background: #17242B;
+  overflow-x: hidden;
+  overflow-y: auto;
+  bottom: 0;
+  left: 0;
+  top:0;
+}
+
+
+.row {
+  margin-bottom: 40px;
+
+   @include view-s {
+    margin-bottom: 20px;
+  }
+
+}
+
+
+
+.opacity-off {
+  opacity: 0;
+}
+
+#traffic-sources, #device-types {
+
+  .ct-series-a .ct-bar {
+    stroke: HSLA(212, 75%, 75%, 1);
+    stroke-width: 20px;
+  }
+
+  .ct-label {
+    font-size: 14px;
+    color: #333;
+  }
+
+}
+
+#view-selector-container {
+  margin: 0 0 20px;
+}
+
+.gapi-analytics-auth-styles-signinbutton {
+  cursor: pointer;
+}
