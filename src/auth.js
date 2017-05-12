@@ -1,5 +1,5 @@
 // Replace with your client ID from the developer console.
-  var CLIENT_ID = '188932152241-501aofbjdt8raoq9vhkq1rqdd8knn1g5.apps.googleusercontent.com';
+  var CLIENT_ID = '[ADD YOUR CLIENT ID HERE]';
 
   // Set authorized scope.
   var SCOPES = ['https://www.googleapis.com/auth/analytics.readonly'];
