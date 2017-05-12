@@ -7,7 +7,7 @@ gapi.analytics.ready(function() {
    */
   gapi.analytics.auth.authorize({
     container: 'embed-api-auth-container',
-    clientid: '188932152241-501aofbjdt8raoq9vhkq1rqdd8knn1g5.apps.googleusercontent.com'
+    clientid: '[ADD YOUR CLIENT ID HERE]'
   });
 
   gapi.analytics.auth.on('success', function(response) {
